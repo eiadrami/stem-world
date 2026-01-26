@@ -42,4 +42,9 @@ if (toggleBtn) {
   toggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("light-mode");
   });
-}
+}// Flip Animation للكروت
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped');
+  });
+});

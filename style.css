@@ -293,4 +293,72 @@ body {
 }
 @keyframes fadeIn {
   to {opacity: 1;}
+}.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f172a;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar h1 {
+  color: #38bdf8;
+  font-size: 24px;
+}
+.navbar a {
+  color: #e5e7eb;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.navbar a:hover {
+  color: #38bdf8;
+}.grades {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+.card {
+  width: 220px;
+  height: 140px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+}
+.card div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 18px;
+  transition: transform 0.6s;
+}
+.front {
+  background: #0f172a;
+  color: #38bdf8;
+}
+.back {
+  background: #1e293b;
+  color: #e5e7eb;
+  transform: rotateY(180deg);
+}
+.card.flipped .front {
+  transform: rotateY(180deg);
+}
+.card.flipped .back {
+  transform: rotateY(0deg);
+}.footer {
+  background: #0f172a;       /* خلفية غامقة */
+  color: #e5e7eb;            /* لون النص فاتح */
+  text-align: center;        /* النص في النص */
+  padding: 20px;             /* مسافة داخلية */
+  margin-top: 40px;          /* مسافة فوق الفوتر */
+  font-size: 16px;
 }
