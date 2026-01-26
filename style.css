@@ -1,4 +1,9 @@
-* {
+* {.hero-logo {
+  display: block;
+  margin: 0 auto 20px auto; /* يخليها في النص فوق النص */
+  max-width: 180px;         /* العرض */
+  height: auto;             /* الطول يتظبط تلقائي */
+}
   margin: 0;
   padding: 0;
   box-sizing: border-box;

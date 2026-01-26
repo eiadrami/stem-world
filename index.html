@@ -29,6 +29,11 @@
 </header>
 
 <section class="hero">
+  <section class="hero">
+  <img src="stem-logo.png" alt="STEM World Logo" class="hero-logo">
+  <h2>Welcome 2 STEM WORLD</h2>
+  <p>Choose your grade to explore resources</p>
+</section>
   <h2>Welcome to STEM WORLD</h2>
   <p>Choose your grade to explore resources</p>
 </section>
@@ -84,6 +89,17 @@
     hero.style.transform = "translateY(0)";
   });
 </script>
-
+<script>
+  const logo = document.querySelector('.hero-logo');
+  logo.style.opacity = 0;
+  logo.style.transform = "scale(0.8)";
+  setTimeout(() => {
+    logo.style.transition = "all 1s ease";
+    logo.style.opacity = 1;
+    logo.style.transform = "scale(1)";
+  }, 300);
+</script>
+</body>
+</html>
 </body>
 </html>
