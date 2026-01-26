@@ -539,33 +539,3 @@ body {
   animation: glow 2s infinite ease-in-out;
 }
 
-@keyframes glow {
-  0% { text-shadow: 0 0 8px #a855f7; }
-  50% { text-shadow: 0 0 20px #c084fc; }
-  100% { text-shadow: 0 0 8px #a855f7; }
-}.tab {
-  background-color: #1e293b;
-  padding: 12px 20px;
-  margin: 10px 0;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  transition: background 0.3s;
-}
-
-.tab:hover {
-  background-color: #334155;
-}
-
-.tab-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.tab a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-}
