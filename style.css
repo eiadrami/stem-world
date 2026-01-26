@@ -521,3 +521,33 @@ body {
   text-shadow: 0 0 8px #a855f7;
   animation: glow 2s infinite ease-in-out;
 }
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.module {
+  background: #1e293b;
+  color: #e5e7eb;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.module h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.module ul {
+  list-style: none;
+  padding: 0;
+}
+
+.module li {
+  margin-bottom: 8px;
+}
