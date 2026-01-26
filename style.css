@@ -422,4 +422,54 @@ body {
 .journal-card {
   text-decoration: none;
   color: inherit;
+}.grades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.card {
+  width: 260px;
+  height: 140px;
+  perspective: 1000px;
+  position: relative;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card-column {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card .front, .card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border-radius: 12px;
+  transition: transform 0.6s;
+}
+
+.front {
+  background: #0f172a;
+  color: #38bdf8;
+}
+
+.back {
+  background: #1e293b;
+  color: #e5e7eb;
+  transform: rotateY(180deg);
+}
+
+.card:hover {
+  transform: scale(1.05);
 }

@@ -53,4 +53,10 @@ document.querySelectorAll('.card').forEach(card => {
       card.classList.toggle('flipped');
     });
   }
+});document.querySelectorAll('.card').forEach(card => {
+  if (!card.tagName.includes('A')) {
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped');
+    });
+  }
 });
