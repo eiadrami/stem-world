@@ -539,3 +539,6 @@ body {
   animation: glow 2s infinite ease-in-out;
 }
 
+.events-icon {
+  background-color: #ff9800; /* غير اللون لو حابب */
+}
