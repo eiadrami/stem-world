@@ -197,4 +197,27 @@ body {
 .hero {
   position: relative;
   top: -30px; /* يرفع النص لفوق */
+}body {
+  background: linear-gradient(270deg, #0f172a, #1e293b, #020617);
+  background-size: 600% 600%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {background-position:0% 50%}
+  50% {background-position:100% 50%}
+  100% {background-position:0% 50%}
+}.card {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.card.flipped {
+  transform: rotateY(180deg);
+}.light-mode {
+  background: #f9fafb;
+  color: #111827;
+}
+.light-mode .card {
+  background: #fff;
+  border: 1px solid #ddd;
 }
