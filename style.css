@@ -521,38 +521,3 @@ body {
   text-shadow: 0 0 8px #a855f7;
   animation: glow 2s infinite ease-in-out;
 }
-
-@keyframes glow {
-  0% { text-shadow: 0 0 8px #a855f7; }
-  50% { text-shadow: 0 0 20px #c084fc; }
-  100% { text-shadow: 0 0 8px #a855f7; }
-}
-
-.card a {
-  color: #ffffff; /* أبيض */
-  text-decoration: none;
-  font-weight: bold;
-}.card h2 {
-  font-size: 28px;
-  color: #a855f7; /* بنفسجي */
-  text-shadow: 0 0 8px #a855f7;
-  animation: glow 2s infinite ease-in-out;
-}
-
-.events-icon {
-  background-color: #ff9800; /* غير اللون لو حابب */
-}
-.card {
-  background: #0b1220;
-  border-radius: 14px;
-  position: relative;
-}
-
-.card::before {
-  content: "";
-  position: absolute;
-  inset: -6px;
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 16px;
-  z-index: -1;
-}
