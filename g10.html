@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>STEM World | G10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>STEM World</h1>
+</header>
+
+<div class="container">
+
+  <h2 class="page-title">Grade 10 Resources</h2>
+
+  <!-- Search -->
+  <input id="searchBar" class="search" type="text" placeholder="Search resources...">
+
+
+  <!-- Files -->
+  <div class="grid">
+    
+  <div class="card"><h3>Deutsch</h3><a href="https://drive.google.com/drive/folders/1Aof5UL8kdUxB4CLJK-YEL2qEzDzAKmJ4?usp=drive_link">OPEN FILE</a></div>
+  <div class="card"><h3>Chemistry</h3><a href="https://drive.google.com/drive/folders/1xcliIElmuMpwoLRjNcX_9TgEAmEEmuVy?usp=drive_link">OPEN FILE</a></div>
+  <div class="card"><h3>Capstone</h3><a href="https://drive.google.com/drive/folders/1pJymN109ezu5McK_Oe5GQIUd4aJce-eb?usp=drive_link">OPEN FILE</a></div>
+  <div class="card"><h3>Biology</h3><a href="https://drive.google.com/drive/folders/1-6figjEZr-ZluRbIVOJbiStrwqweiHjl?usp=drive_link">OPEN FILE</a></div>
+
+  <div class="card"><h3>Geology</h3><a href="https://drive.google.com/drive/folders/19aQli2fEdq0879hi5TefV7QKowAl1Bbm?usp=drive_link">OPEN FILE</a></div>
+  <div class="card"><h3>French</h3><a href="https://drive.google.com/drive/folders/1-X9vGi-98xrzcrGdlV3xsUM2HiZggFHN?usp=drive_link">OPEN FILE</a></div>
+  <div class="card"><h3>English</h3><a href="https://drive.google.com/drive/folders/1RGsqz1_LRRMTQnGHmnnjeOqtR86pvOcW?usp=drive_link">OPEN FILE</a></div>
+  <div class="card"><h3>El-Moasser</h3><a href="https://drive.google.com/drive/folders/1qQCCAspO80IV9GOnIRK9SDPe7wt4GwBf?usp=drive_link">OPEN FILE</a></div>
+  <div class="card"><h3>Mechanics</h3><a href="https://drive.google.com/drive/folders/11312oQDxk61C11vEf7jhT-TrA1Sr6F4N?usp=drive_link">OPEN FILE</a></div>
+  <div class="card"><h3>Math</h3><a href="https://drive.google.com/drive/folders/1HENUav81JcBK-99Yypz9obrTd50VR2Qu?usp=drive_link">OPEN FILE</a></div>
+  <div class="card"><h3>Religion</h3><a href="https://drive.google.com/drive/folders/1NrMo6xn1E7s2iBtdOX9x58Ol4TTKerRz?usp=drive_link">OPEN FILE</a></div>
+  <div class="card"><h3>Practical G10</h3><a href="https://drive.google.com/drive/folders/1RLCZX28tXi20lL4SYmnOaXfiJ22sAy4K?usp=drive_link ">OPEN FILE</a></div>
+  <div class="card"><h3>Physics</h3><a href="https://drive.google.com/drive/folders/1E_GQ6KuY29YMSfZI4NyI6htzjZ0qCVC2?usp=drive_link">OPEN FILE</a></div>
+  <div class="card"><h3>Old Exams</h3><a href="https://drive.google.com/drive/folders/11HBk938Bt2aWwFRlVzMfii6ppiZ2gxlD?usp=drive_link">OPEN FILE</a></div>
+  <div class="card"><h3>Social Studies</h3><a href="https://drive.google.com/drive/folders/1IGk_-SI0LDK741iwS6Llqx80tcsCdk82?usp=drive_link">OPEN FILE</a></div>
+</div>
+</div></a></div>
+  <div class="card"><h3>RED SEA STEM  </h3><a></a></div>
+   
+
+</div>
+...
+</div> <!-- نهاية الـ container -->
+
+<!-- هنا تحط الكود -->
+<script>
+  const searchBar = document.getElementById('searchBar'); // نمسك الـ input
+  const cards = document.querySelectorAll('.card');       // نمسك الكروت
+
+  searchBar.addEventListener('keyup', function(e) {
+    const text = e.target.value.toLowerCase(); // النص اللي المستخدم كتبه
+
+    cards.forEach(card => {
+      const title = card.querySelector('h3').textContent.toLowerCase();
+      if (title.includes(text)) {
+        card.style.display = 'block'; // يظهر الكارت
+      } else {
+        card.style.display = 'none';  // يخفي الكارت
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+</body>
+</html>
+  

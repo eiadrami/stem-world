@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.header {
+  background: #020617;
+  padding: 20px 40px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.header h1 {
+  color: #38bdf8;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  color: #e5e7eb;
+}
+
+/* Search */
+.search {
+  width: 100%;
+  max-width: 420px;
+  padding: 14px 18px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  color: #e5e7eb;
+  margin-bottom: 20px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.tab {
+  padding: 10px 22px;
+  background: #020617;
+  color: #94a3b8;
+  border: 1px solid #1e293b;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: #38bdf8;
+  border-color: #38bdf8;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #020617;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #1e293b;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #38bdf8;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  border-top: 1px solid #1e293b;
+  color: #94a3b8;
+}
+
+.footer a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+}
+.grades {
+  display: flex;
+  justify-content: center; /* يخلّي الكروت في النص */
+  gap: 20px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+  max-width: 800px;
+}.signature {
+  position: fixed;       /* يثبت العنصر في مكانه */
+  bottom: 10px;          /* تحت خالص */
+  right: 20px;           /* على اليمين */
+  font-family: 'Cursive', sans-serif; /* خط مشبك */
+  font-size: 18px;       /* حجم مناسب */
+  color: #38bdf8;        /* نفس الأزرق بتاع الديزاين */
+  opacity: 0.7;          /* شفاف شوية علشان يبقى أنيق */
+}.contact {
+  background: #020617;
+  border-top: 1px solid #1e293b;
+  padding: 40px 20px;
+  text-align: center;
+  color: #e5e7eb;
+}
+
+.contact h3 {
+  color: #38bdf8;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* علشان يظبط على الموبايل */
+}
+
+.contact-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card h4 {
+  margin-bottom: 10px;
+  color: #38bdf8;
+  font-size: 20px;
+}
+
+.contact-card p {
+  font-size: 16px;
+  color: #e5e7eb;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}.hero-logo {
+  display: block;
+  margin: 0 auto 20px auto; /* يخلي الصورة في النص وتحتها مسافة */
+  max-width: 180px;         /* العرض المناسب للصورة */
+  height: auto;             /* يخلي الطول يتظبط تلقائي */
+}

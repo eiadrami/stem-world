@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>STEM World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>STEM World</h1>
+</header>
+
+<section class="hero">
+  <img src="C:\STEM WORLD\stem-logo.png.png" alt="STEM World Logo" class="hero-logo">
+  <h2>Welcome to STEM WORLD</h2>
+  <p>Choose your grade to explore resources</p>
+</section>
+
+<main class="grades">
+  <a href="g10.html" class="card">
+    <h2>Grade 10</h2>
+    <p>Curriculum & Resources</p>
+  </a>
+
+  <a href="g11.html" class="card">
+    <h2>Grade 11</h2>
+    <p>Coming Soon</p>
+  </a>
+</main>
+
+<footer class="footer">
+  <p>Join our WhatsApp Channel: <a href="https://whatsapp.com/channel/0029VbBlWzc4o7qUHz4SuQ1N">Click Here</a></p>
+</footer>
+<div class="signature">eiad ramy</div>
+<section class="contact">
+  <h3>For Communication</h3>
+  <div class="contact-cards">
+    <div class="contact-card">
+      <h4>Eiad Ramy</h4>
+      <p>📞 010 36088928</p>
+    </div>
+    <div class="contact-card">
+      <h4>Adam Hussien</h4>
+      <p>📞 012 79713848</p>
+    </div>
+    <div class="contact-card">
+      <h4>Yousef Araby</h4>
+      <p>📞 012 83458666</p>
+    </div>
+    <div class="contact-card">
+      <h4>Roaa Alaa</h4>
+      <p>📞 011 00684222</p>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+  // أنيميشن للـ Hero عند تحميل الصفحة
+  document.addEventListener("DOMContentLoaded", () => {
+    const hero = document.querySelector(".hero h2");
+    hero.style.opacity = 0;
+    hero.style.transform = "translateY(20px)";
+    setTimeout(() => {
+      hero.style.transition = "all 1s ease";
+      hero.style.opacity = 1;
+      hero.style.transform = "translateY(0)";
+    }, 300);
+  });
+</script>
+</body>
+</html>
