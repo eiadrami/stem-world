@@ -99,7 +99,27 @@
     logo.style.transform = "scale(1)";
   }, 300);
 </script>
+<script>
+  // تأثير الكتابة للنص Welcome to STEM WORLD
+  const text = "Welcome to STEM WORLD";
+  let i = 0;
+  function typingEffect() {
+    if (i < text.length) {
+      document.getElementById("typing").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typingEffect, 100);
+    }
+  }
+  typingEffect();
+</script>
 </body>
 </html>
+</body>
+</html>
+
+
+
+
+
 </body>
 </html>
