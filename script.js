@@ -47,4 +47,10 @@ document.querySelectorAll('.card').forEach(card => {
   card.addEventListener('click', () => {
     card.classList.toggle('flipped');
   });
+});document.querySelectorAll('.card').forEach(card => {
+  if (!card.classList.contains('journal-card')) {
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped');
+    });
+  }
 });
