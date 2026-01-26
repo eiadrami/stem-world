@@ -472,4 +472,22 @@ body {
 
 .card:hover {
   transform: scale(1.05);
+}.subject-title {
+  font-size: 28px;
+  color: #a855f7; /* بنفسجي */
+  position: relative;
+  animation: shine 2s infinite linear;
+  text-shadow: 0 0 8px #a855f7;
+}
+
+@keyframes shine {
+  0% {
+    text-shadow: 0 0 8px #a855f7;
+  }
+  50% {
+    text-shadow: 0 0 20px #c084fc;
+  }
+  100% {
+    text-shadow: 0 0 8px #a855f7;
+  }
 }
