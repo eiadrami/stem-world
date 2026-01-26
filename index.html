@@ -4,6 +4,23 @@
   <meta charset="UTF-8">
   <title>STEM World</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* CSS مؤقت للترحيب يبقى في النص وشكل جميل */
+    .hero {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 1s ease;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+  </style>
 </head>
 <body>
 
@@ -12,7 +29,6 @@
 </header>
 
 <section class="hero">
-  <img src="images/stem-logo.png" alt="STEM World Logo" class="hero-logo">
   <h2>Welcome to STEM WORLD</h2>
   <p>Choose your grade to explore resources</p>
 </section>
@@ -64,13 +80,8 @@
   // أنيميشن للـ Hero عند تحميل الصفحة
   document.addEventListener("DOMContentLoaded", () => {
     const hero = document.querySelector(".hero h2");
-    hero.style.opacity = 0;
-    hero.style.transform = "translateY(20px)";
-    setTimeout(() => {
-      hero.style.transition = "all 1s ease";
-      hero.style.opacity = 1;
-      hero.style.transform = "translateY(0)";
-    }, 300);
+    hero.style.opacity = 1;
+    hero.style.transform = "translateY(0)";
   });
 </script>
 
