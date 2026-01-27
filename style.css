@@ -564,4 +564,34 @@ body {
   background-color: #1e293b;
   color: #fff;
   box-shadow: 0 0 10px #a855f7;
+}.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px; /* حجم مناسب للموبايل */
+  margin: 10px;
+}@media (max-width: 768px) {
+  .navbar nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .card {
+    width: 90%; /* الكارت ياخد عرض الشاشة تقريبًا */
+  }
+
+  #searchInput {
+    width: 90%;
+  }
+}.card a {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 18px;
+}.card a {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 18px;
 }
