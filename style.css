@@ -550,4 +550,18 @@ body {
 
 .module li {
   margin-bottom: 8px;
+}.search-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#searchInput {
+  width: 60%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1e293b;
+  color: #fff;
+  box-shadow: 0 0 10px #a855f7;
 }

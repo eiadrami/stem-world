@@ -21,7 +21,9 @@
   <h2>Biology Lessons</h2>
   <p>Explore all the lessons organized for Grade 10 Biology 🧪</p>
 </section>
-
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search lessons..." onkeyup="filterLessons()">
+</div>
 <main class="cards">
   <div class="card">
     <h2>Lesson 1: Cell Structure</h2>
@@ -62,6 +64,20 @@
 <footer class="footer">
   <p>RED SEA STEM — Biology Resources ✨</p>
 </footer>
+<script>
+function filterLessons() {
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const cards = document.querySelectorAll(".card");
 
+  cards.forEach(card => {
+    const title = card.querySelector("h2").textContent.toLowerCase();
+    if (title.includes(input)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+</script>
 </body>
 </html>
