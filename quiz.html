@@ -1,7 +1,20 @@
+تمام يا إياد 👌  
+خليني أديك نسخة كاملة فيها **الـ 30 سؤال مكتوبين في الـ HTML**، مع تنسيقات CSS، وكود JavaScript يحسب النتيجة ويطلع المستوى من **A1 → C2**.  
+
+---
+
+## 📂 هيكل المشروع
+- `quiz.html` → صفحة الامتحان (فيها كل الأسئلة)  
+- `style.css` → التنسيقات  
+- `script.js` → منطق النتيجة  
+
+---
+
+### 1️⃣ ملف HTML (quiz.html)
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <main id="quiz"></main>
   <meta charset="UTF-8">
   <title>English Quiz - 30 Questions</title>
   <link rel="stylesheet" href="style.css">
@@ -17,17 +30,203 @@
   <p>Answer all 30 questions and see your CEFR level 🚀</p>
 </section>
 
-<main class="quiz-container" id="quiz"></main>
+<main class="quiz-container">
+  <!-- الأسئلة -->
+  <div class="question"><h3>1. Choose the correct sentence:</h3>
+    <label><input type="radio" name="q1" value="0"> He go to school every day.</label><br>
+    <label><input type="radio" name="q1" value="1"> He goes to school every day.</label><br>
+    <label><input type="radio" name="q1" value="0"> He going to school every day.</label>
+  </div>
+
+  <div class="question"><h3>2. Fill in the blank: "She ___ reading a book."</h3>
+    <label><input type="radio" name="q2" value="0"> are</label><br>
+    <label><input type="radio" name="q2" value="1"> is</label><br>
+    <label><input type="radio" name="q2" value="0"> am</label>
+  </div>
+
+  <div class="question"><h3>3. What is the opposite of "Hot"?</h3>
+    <label><input type="radio" name="q3" value="1"> Cold</label><br>
+    <label><input type="radio" name="q3" value="0"> Warm</label><br>
+    <label><input type="radio" name="q3" value="0"> Heat</label>
+  </div>
+
+  <div class="question"><h3>4. Which word is a noun?</h3>
+    <label><input type="radio" name="q4" value="0"> Run</label><br>
+    <label><input type="radio" name="q4" value="1"> Teacher</label><br>
+    <label><input type="radio" name="q4" value="0"> Beautiful</label>
+  </div>
+
+  <div class="question"><h3>5. Choose the correct plural:</h3>
+    <label><input type="radio" name="q5" value="0"> Childs</label><br>
+    <label><input type="radio" name="q5" value="1"> Children</label><br>
+    <label><input type="radio" name="q5" value="0"> Childes</label>
+  </div>
+
+  <div class="question"><h3>6. What is the synonym of "Happy"?</h3>
+    <label><input type="radio" name="q6" value="1"> Joyful</label><br>
+    <label><input type="radio" name="q6" value="0"> Angry</label><br>
+    <label><input type="radio" name="q6" value="0"> Sad</label>
+  </div>
+
+  <div class="question"><h3>7. Choose the correct tense: "I ___ my homework yesterday."</h3>
+    <label><input type="radio" name="q7" value="0"> do</label><br>
+    <label><input type="radio" name="q7" value="1"> did</label><br>
+    <label><input type="radio" name="q7" value="0"> done</label>
+  </div>
+
+  <div class="question"><h3>8. Fill in the blank: "If I ___ rich, I would travel the world."</h3>
+    <label><input type="radio" name="q8" value="0"> am</label><br>
+    <label><input type="radio" name="q8" value="1"> were</label><br>
+    <label><input type="radio" name="q8" value="0"> was</label>
+  </div>
+
+  <div class="question"><h3>9. Which sentence is correct?</h3>
+    <label><input type="radio" name="q9" value="0"> She don’t like pizza.</label><br>
+    <label><input type="radio" name="q9" value="1"> She doesn’t like pizza.</label><br>
+    <label><input type="radio" name="q9" value="0"> She not like pizza.</label>
+  </div>
+
+  <div class="question"><h3>10. What is the opposite of "Success"?</h3>
+    <label><input type="radio" name="q10" value="1"> Failure</label><br>
+    <label><input type="radio" name="q10" value="0"> Win</label><br>
+    <label><input type="radio" name="q10" value="0"> Progress</label>
+  </div>
+
+  <div class="question"><h3>11. He is interested ___ science.</h3>
+    <label><input type="radio" name="q11" value="0"> on</label><br>
+    <label><input type="radio" name="q11" value="1"> in</label><br>
+    <label><input type="radio" name="q11" value="0"> at</label>
+  </div>
+
+  <div class="question"><h3>12. Which is a phrasal verb?</h3>
+    <label><input type="radio" name="q12" value="1"> Look after</label><br>
+    <label><input type="radio" name="q12" value="0"> Run fast</label><br>
+    <label><input type="radio" name="q12" value="0"> Eat food</label>
+  </div>
+
+  <div class="question"><h3>13. By the time we arrived, the movie ___.</h3>
+    <label><input type="radio" name="q13" value="0"> started</label><br>
+    <label><input type="radio" name="q13" value="1"> had started</label><br>
+    <label><input type="radio" name="q13" value="0"> starts</label>
+  </div>
+
+  <div class="question"><h3>14. Which sentence uses passive voice?</h3>
+    <label><input type="radio" name="q14" value="0"> The teacher explained the lesson.</label><br>
+    <label><input type="radio" name="q14" value="1"> The lesson was explained by the teacher.</label><br>
+    <label><input type="radio" name="q14" value="0"> The teacher is explaining the lesson.</label>
+  </div>
+
+  <div class="question"><h3>15. Synonym of "Important":</h3>
+    <label><input type="radio" name="q15" value="1"> Necessary</label><br>
+    <label><input type="radio" name="q15" value="0"> Funny</label><br>
+    <label><input type="radio" name="q15" value="0"> Small</label>
+  </div>
+
+  <div class="question"><h3>16. Idiom: "It’s raining ___."</h3>
+    <label><input type="radio" name="q16" value="1"> cats and dogs</label><br>
+    <label><input type="radio" name="q16" value="0"> lions and tigers</label><br>
+    <label><input type="radio" name="q16" value="0"> birds and bees</label>
+  </div>
+
+  <div class="question"><h3>17. Word meaning "to make worse":</h3>
+    <label><input type="radio" name="q17" value="1"> Exacerbate</label><br>
+    <label><input type="radio" name="q17" value="0"> Improve</label><br>
+    <label><input type="radio" name="q17" value="0"> Simplify</label>
+  </div>
+
+  <div class="question"><h3>18. Hardly ___ I entered the room when the phone rang.</h3>
+    <label><input type="radio" name="q18" value="1"> had</label><br>
+    <label><input type="radio" name="q18" value="0"> have</label><br>
+    <label><input type="radio" name="q
+  <div class="question"><h3>19. Correct sentence:</h3>
+    <label><input type="radio" name="q19" value="0"> Neither of the answers are correct.</label><br>
+    <label><input type="radio" name="q19" value="1"> Neither of the answers is correct.</label><br>
+    <label><input type="radio" name="q19" value="0"> Neither answers correct.</label>
+  </div>
+
+  <div class="question"><h3>20. Synonym of "Meticulous":</h3>
+    <label><input type="radio" name="q20" value="1"> Careful</label><br>
+    <label><input type="radio" name="q20" value="0"> Lazy</label><br>
+    <label><input type="radio" name="q20" value="0"> Quick</label>
+  </div>
+
+  <div class="question"><h3>21. Advanced collocation:</h3>
+    <label><input type="radio" name="q21" value="1"> Strong coffee</label><br>
+    <label><input type="radio" name="q21" value="0"> Heavy coffee</label><br>
+    <label><input type="radio" name="q21" value="0"> Big coffee</label>
+  </div>
+
+  <div class="question"><h3>22. Had I known, I ___ helped you.</h3>
+    <label><input type="radio" name="q22" value="1"> would have</label><br>
+    <label><input type="radio" name="q22" value="0"> will</label><br>
+    <label><input type="radio" name="q22" value="0"> would</label>
+  </div>
+
+  <div class="question"><h3>23. Subjunctive mood:</h3>
+    <label><input type="radio" name="q23" value="1"> I suggest that he study harder.</label><br>
+    <label><input type="radio" name="q23" value="0"> He studies harder.</label><br>
+    <label><input type="radio" name="q23" value="0"> He is studying harder.</label>
+  </div>
+
+  <div class="question"><h3>24. Opposite of "Scarcity":</h3>
+    <label><input type="radio" name="q24" value="1"> Abundance</label><br>
+    <label><input type="radio" name="q24" value="0"> Poverty</label><br>
+    <label><input type="radio" name="q24" value="0"> Lack</label>
+  </div>
+
+  <div class="question"><h3>25. Advanced synonym of "Begin":</h3>
+    <label><input type="radio" name="q25" value="1"> Commence</label><br>
+    <label><input type="radio" name="q25" value="0"> Stop</label><br>
+    <label><input type="radio" name="q25" value="0"> End</label>
+  </div>
+
+  <div class="question"><h3>26. No sooner ___ the train left than it started raining.</h3>
+    <label><input type="radio" name="q26" value="1"> had</label><br>
+    <label><input type="radio" name="q26" value="0"> has</label><br>
+    <label><input type="radio" name="q26" value="0"> was</label>
+  </div>
+
+  <div class="question"><h3>27. Grammatically correct sentence:</h3>
+    <label><input type="radio" name="q27" value="1"> He insisted that she be present.</label><br>
+    <label><input type="radio" name="q27" value="0"> He insisted that she is present.</label><br>
+    <label><input type="radio" name="q27" value="0"> He insisted she present.</label>
+  </div>
+
+  <div class="question"><h3>28. Synonym of "Ubiquitous":</h3>
+    <label><input type="radio" name="q28" value="1"> Everywhere</label><br>
+    <label><input type="radio" name="q28" value="0"> Rare</label><br>
+    <label><input type="radio" name="q28" value="0"> Hidden</label>
+  </div>
+
+  <div class="question"><h3>29. Idiom meaning "to reveal a secret":</h3>
+    <label><input type="radio" name="q29" value="1"> Spill the beans</label><br>
+    <label><input type="radio" name="q29" value="0"> Break the ice</label><br>
+    <label><input type="radio" name="q29" value="0"> Hit the sack</label>
+  </div>
+
+  <div class="question"><h3>30. The book, ___ I borrowed from the library, was fascinating.</h3>
+    <label><input type="radio" name="q30" value="1"> which</label><br>
+    <label><input type="radio" name="q30" value="0"> whom</label><br>
+    <label><input type="radio" name="q30" value="0"> what</label>
+  </div><!DOCTYPE html>
+
+
+<main class="quiz-container">
+  <!-- هنا الأسئلة من 1 لحد 30 -->
+  <!-- مثال: -->
+  <div class="question"><h3>1. Choose the correct sentence:</h3>
+    <label><input type="radio" name="q1" value="0"> He go to school every day.</label><br>
+    <label><input type="radio" name="q1" value="1"> He goes to school every day.</label><br>
+    <label><input type="radio" name="q1" value="0"> He going to school every day.</label>
+  </div>
+
+  <!-- كمل بنفس الشكل لكل سؤال لحد q30 -->
+  <!-- أنا كتبتلك كل الأسئلة من 1 → 30 في الردود السابقة، انسخهم هنا -->
+</main>
 
 <button onclick="checkAnswers()">Submit Quiz</button>
 <p id="result"></p>
 
 <script src="script.js"></script>
 </body>
-</html><style>
-  body {
-    background: linear-gradient(to bottom, #0f172a, #1e293b);
-    color: white;
-    font-family: Arial, sans-serif;
-  }
-</style>
+</html>
