@@ -1,12 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <button onclick="checkAnswers()">Submit Quiz</button>
-<p id="result"></p>
+
   <meta charset="UTF-8">
   <title>English Quiz - 30 Questions</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #0f172a, #1e293b, #2563eb);
+      color: white;
+    }
+    .navbar {
+      background: rgba(30, 41, 59, 0.8);
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    .hero {
+      text-align: center;
+      padding: 20px;
+    }
+    .quiz-container {
+      max-width: 700px;
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      background: #38bdf8;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #0ea5e9;
+    }
+    #result {
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
 
@@ -20,7 +67,7 @@
 </section>
 
 <main class="quiz-container">
-  <!-- الأسئلة -->
+  <!-- 30 سؤال -->
   <div class="question"><h3>1. Choose the correct sentence:</h3>
     <label><input type="radio" name="q1" value="0"> He go to school every day.</label><br>
     <label><input type="radio" name="q1" value="1"> He goes to school every day.</label><br>
@@ -33,7 +80,7 @@
     <label><input type="radio" name="q2" value="0"> am</label>
   </div>
 
-  <div class="question"><h3>3. What is the opposite of "Hot"?</h3>
+  <div class="question"><h3>3. Opposite of "Hot":</h3>
     <label><input type="radio" name="q3" value="1"> Cold</label><br>
     <label><input type="radio" name="q3" value="0"> Warm</label><br>
     <label><input type="radio" name="q3" value="0"> Heat</label>
@@ -45,25 +92,25 @@
     <label><input type="radio" name="q4" value="0"> Beautiful</label>
   </div>
 
-  <div class="question"><h3>5. Choose the correct plural:</h3>
+  <div class="question"><h3>5. Correct plural:</h3>
     <label><input type="radio" name="q5" value="0"> Childs</label><br>
     <label><input type="radio" name="q5" value="1"> Children</label><br>
     <label><input type="radio" name="q5" value="0"> Childes</label>
   </div>
 
-  <div class="question"><h3>6. What is the synonym of "Happy"?</h3>
+  <div class="question"><h3>6. Synonym of "Happy":</h3>
     <label><input type="radio" name="q6" value="1"> Joyful</label><br>
     <label><input type="radio" name="q6" value="0"> Angry</label><br>
     <label><input type="radio" name="q6" value="0"> Sad</label>
   </div>
 
-  <div class="question"><h3>7. Choose the correct tense: "I ___ my homework yesterday."</h3>
+  <div class="question"><h3>7. I ___ my homework yesterday.</h3>
     <label><input type="radio" name="q7" value="0"> do</label><br>
     <label><input type="radio" name="q7" value="1"> did</label><br>
     <label><input type="radio" name="q7" value="0"> done</label>
   </div>
 
-  <div class="question"><h3>8. Fill in the blank: "If I ___ rich, I would travel the world."</h3>
+  <div class="question"><h3>8. If I ___ rich, I would travel the world.</h3>
     <label><input type="radio" name="q8" value="0"> am</label><br>
     <label><input type="radio" name="q8" value="1"> were</label><br>
     <label><input type="radio" name="q8" value="0"> was</label>
@@ -75,7 +122,7 @@
     <label><input type="radio" name="q9" value="0"> She not like pizza.</label>
   </div>
 
-  <div class="question"><h3>10. What is the opposite of "Success"?</h3>
+  <div class="question"><h3>10. Opposite of "Success":</h3>
     <label><input type="radio" name="q10" value="1"> Failure</label><br>
     <label><input type="radio" name="q10" value="0"> Win</label><br>
     <label><input type="radio" name="q10" value="0"> Progress</label>
@@ -99,7 +146,7 @@
     <label><input type="radio" name="q13" value="0"> starts</label>
   </div>
 
-  <div class="question"><h3>14. Which sentence uses passive voice?</h3>
+  <div class="question"><h3>14. Passive voice:</h3>
     <label><input type="radio" name="q14" value="0"> The teacher explained the lesson.</label><br>
     <label><input type="radio" name="q14" value="1"> The lesson was explained by the teacher.</label><br>
     <label><input type="radio" name="q14" value="0"> The teacher is explaining the lesson.</label>
@@ -111,7 +158,7 @@
     <label><input type="radio" name="q15" value="0"> Small</label>
   </div>
 
-  <div class="question"><h3>16. Idiom: "It’s raining ___."</h3>
+    <div class="question"><h3>16. Idiom: "It’s raining ___."</h3>
     <label><input type="radio" name="q16" value="1"> cats and dogs</label><br>
     <label><input type="radio" name="q16" value="0"> lions and tigers</label><br>
     <label><input type="radio" name="q16" value="0"> birds and bees</label>
@@ -126,7 +173,9 @@
   <div class="question"><h3>18. Hardly ___ I entered the room when the phone rang.</h3>
     <label><input type="radio" name="q18" value="1"> had</label><br>
     <label><input type="radio" name="q18" value="0"> have</label><br>
-    <label><input type="radio" name="q
+    <label><input type="radio" name="q18" value="0"> was</label>
+  </div>
+
   <div class="question"><h3>19. Correct sentence:</h3>
     <label><input type="radio" name="q19" value="0"> Neither of the answers are correct.</label><br>
     <label><input type="radio" name="q19" value="1"> Neither of the answers is correct.</label><br>
@@ -197,25 +246,38 @@
     <label><input type="radio" name="q30" value="1"> which</label><br>
     <label><input type="radio" name="q30" value="0"> whom</label><br>
     <label><input type="radio" name="q30" value="0"> what</label>
-  </div><!DOCTYPE html>
-
-
-<main class="quiz-container">
-  <!-- هنا الأسئلة من 1 لحد 30 -->
-  <!-- مثال: -->
-  <div class="question"><h3>1. Choose the correct sentence:</h3>
-    <label><input type="radio" name="q1" value="0"> He go to school every day.</label><br>
-    <label><input type="radio" name="q1" value="1"> He goes to school every day.</label><br>
-    <label><input type="radio" name="q1" value="0"> He going to school every day.</label>
   </div>
-
-  <!-- كمل بنفس الشكل لكل سؤال لحد q30 -->
-  <!-- أنا كتبتلك كل الأسئلة من 1 → 30 في الردود السابقة، انسخهم هنا -->
-</main>
+  </main>
 
 <button onclick="checkAnswers()">Submit Quiz</button>
 <p id="result"></p>
 
-<script src="script.js"></script>
-</body>
-</html>
+  <script>
+function checkAnswers() {
+  let score = 0;
+  const total = 30; // عدد الأسئلة
+
+  // نلف على كل الأسئلة من q1 → q30
+  for (let i = 1; i <= total; i++) {
+    const selected = document.querySelector(`input[name="q${i}"]:checked`);
+    if (selected && selected.value === "1") {
+      score++;
+    }
+  }
+
+  // حساب النسبة المئوية
+  const percentage = (score / total) * 100;
+  let level = "";
+
+  if (percentage <= 20) level = "A1 (Beginner)";
+  else if (percentage <= 40) level = "A2 (Elementary)";
+  else if (percentage <= 60) level = "B1 (Intermediate)";
+  else if (percentage <= 80) level = "B2 (Upper Intermediate)";
+  else if (percentage <= 90) level = "C1 (Advanced)";
+  else level = "C2 (Proficient)";
+
+  // عرض النتيجة
+  document.getElementById("result").textContent =
+    `Your score: ${score}/${total} → Level: ${level}`;
+}
+</script>
