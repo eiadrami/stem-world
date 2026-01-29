@@ -122,4 +122,22 @@ function checkAnswers() {
   else if (percentage <= 90) level = "C1 (Advanced)";
   else level = "C2 (Proficient)";
 
+  document.getElementById("result").textContent =function checkAnswers() {
+  let score = 0;
+  questions.forEach((q, i) => {
+    const selected = document.querySelector(`input[name="q${i}"]:checked`);
+    if (selected && parseInt(selected.value) === q.answer) score++;
+  });
+
+  const percentage = (score / questions.length) * 100;
+  let level = "";
+  if (percentage <= 20) level = "A1 (Beginner)";
+  else if (percentage <= 40) level = "A2 (Elementary)";
+  else if (percentage <= 60) level = "B1 (Intermediate)";
+  else if (percentage <= 80) level = "B2 (Upper Intermediate)";
+  else if (percentage <= 90) level = "C1 (Advanced)";
+  else level = "C2 (Proficient)";
+
   document.getElementById("result").textContent =
+    `Your score: ${score}/${questions.length} → Level: ${level}`;
+}
