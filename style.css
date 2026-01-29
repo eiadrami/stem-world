@@ -639,4 +639,5 @@ body {
 
 .event-card a:hover {
   text-decoration: underline;
-}
+}.card { opacity: 0; transform: translateY(50px); transition: 0.6s; }
+.card.visible { opacity: 1; transform: translateY(0); }

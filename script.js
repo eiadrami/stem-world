@@ -59,4 +59,37 @@ document.querySelectorAll('.card').forEach(card => {
       card.classList.toggle('flipped');
     });
   }
+});document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((card, i) => {
+    setTimeout(() => {
+      card.style.opacity = 1;
+      card.style.transform = "translateY(0)";
+    }, i * 200); // يدخلوا واحد ورا التاني
+  });
+});const toggleBtn = document.getElementById("toggleMode");
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  localStorage.setItem("mode", document.body.classList.contains("dark") ? "dark" : "light");
 });
+
+// عند فتح الصفحة
+if(localStorage.getItem("mode") === "dark") {
+  document.body.classList.add("dark");
+}window.addEventListener("scroll", () => {
+  document.querySelectorAll(".card").forEach(card => {
+    const rect = card.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 100) {
+      card.classList.add("visible");
+    }
+  });
+});document.querySelectorAll(".card a").forEach(link => {
+  link.addEventListener("click", () => {
+    localStorage.setItem("lastLesson", link.textContent);
+  });
+});
+
+window.onload = () => {
+  const last = localStorage.getItem("lastLesson");
+  if(last) alert("آخر درس فتحته: " + last);
+};
