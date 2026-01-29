@@ -692,24 +692,59 @@ button:hover {
   margin-top: 20px;
   text-align: center;
   font-size: 18px;
-}function checkAnswers() {
-  let score = 0;
-  const total = 30; // عدد الأسئلة
+}body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* خلفية متدرجة ديناميك */
+  background: linear-gradient(to bottom, #0f172a, #1e293b, #2563eb);
+  color: white;
+}
 
-  for (let i = 1; i <= total; i++) {
-    const selected = document.querySelector(`input[name="q${i}"]:checked`);
-    if (selected && selected.value === "1") score++;
-  }
+.navbar {
+  background: rgba(30, 41, 59, 0.8);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
 
-  const percentage = (score / total) * 100;
-  let level = "";
-  if (percentage <= 20) level = "A1 (Beginner)";
-  else if (percentage <= 40) level = "A2 (Elementary)";
-  else if (percentage <= 60) level = "B1 (Intermediate)";
-  else if (percentage <= 80) level = "B2 (Upper Intermediate)";
-  else if (percentage <= 90) level = "C1 (Advanced)";
-  else level = "C2 (Proficient)";
+.hero {
+  text-align: center;
+  padding: 20px;
+}
 
-  document.getElementById("result").textContent =
-    `Your score: ${score}/${total} → Level: ${level}`;
+.quiz-container {
+  max-width: 700px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background: #38bdf8;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+#result {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
 }
