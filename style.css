@@ -775,4 +775,21 @@ button:hover {
 
 .leaderboard tr:nth-child(even) {
   background-color: #f9f9f9;
+}.stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 2.5em;
+  color: #003366;
+  margin: 0;
+}
+
+.stat p {
+  font-size: 1.2em;
+  color: #555;
 }

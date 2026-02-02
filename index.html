@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+  <section class="stats">
+  <div class="stat">
+    <h3 id="students">0</h3>
+    <p>Students</p>
+  </div>
+  <div class="stat">
+    <h3 id="projects">0</h3>
+    <p>Projects</p>
+  </div>
+  <div class="stat">
+    <h3 id="competitions">0</h3>
+    <p>Competitions</p>
+  </div>
+</section>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <button id="toggleTheme">🌙 / ☀️</button>
@@ -225,6 +238,27 @@
   <P>wish you easier learning🎉</P>
   <p> </p>
   <P>have a great time❤️</P>
+  <script>
+  function animateValue(id, start, end, duration) {
+    let obj = document.getElementById(id);
+    let range = end - start;
+    let stepTime = Math.abs(Math.floor(duration / range));
+    let current = start;
+    let increment = end > start ? 1 : -1;
+    let timer = setInterval(function() {
+      current += increment;
+      obj.textContent = current + "+";
+      if (current == end) {
+        clearInterval(timer);
+      }
+    }, stepTime);
+  }
+
+  // تشغيل العداد
+  animateValue("students", 0, 500, 2000);
+  animateValue("projects", 0, 120, 2000);
+  animateValue("competitions", 0, 30, 2000);
+</script>
 </footer>
 
 </body>
