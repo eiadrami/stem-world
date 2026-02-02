@@ -140,7 +140,7 @@
   </div>
   
 </section>
-  <section class="stats">
+<section class="stats">
   <div class="stat">
     <h3 id="students">0</h3>
     <p>Students</p>
@@ -148,11 +148,11 @@
   <div class="stat">
     <h3 id="projects">0</h3>
     <p>Projects</p>
-  <p>Competitions</p>
-  </div></div>
+  </div>
   <div class="stat">
     <h3 id="competitions">0</h3>
-    
+    <p>Competitions</p>
+  </div>
 </section>
 
 <script>
@@ -234,13 +234,7 @@
 <script src="script.js"></script>
 <!-- باقي الصفحة: Hero + Grades + Contact -->
 
-<footer class="footer">
-  <p>STEM World — Empowering the next generation of innovators ✨</p>
-  <p> </p>
-  <P>wish you easier learning🎉</P>
-  <p> </p>
-  <P>have a great time❤️</P>
-  <script>
+<script>
   function animateValue(id, start, end, duration) {
     let obj = document.getElementById(id);
     let range = end - start;
@@ -256,12 +250,18 @@
     }, stepTime);
   }
 
-  // تشغيل العداد
-  animateValue("students", 0, 500, 2000);
-  animateValue("projects", 0, 120, 2000);
-  animateValue("competitions", 0, 30, 2000);
-</script>
-</footer>
+  // تشغيل العداد لما يوصل المستخدم للجزء ده
+  window.addEventListener("scroll", () => {
+    const statsSection = document.querySelector(".stats");
+    const rect = statsSection.getBoundingClientRect();
+    if (rect.top < window.innerHeight && !statsSection.classList.contains("started")) {
+      statsSection.classList.add("started");
+      animateValue("students", 0, 500, 2000);
+      animateValue("projects", 0, 120, 2000);
+      animateValue("competitions", 0, 30, 2000);
+    }
+  });
+</script>s
 
 </body>
 </html>
