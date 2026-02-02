@@ -250,7 +250,49 @@
   </main>
 
 <button onclick="checkAnswers()">Submit Quiz</button>
-<p id="result"></p>
+<p id="result"></p><section class="leaderboard">
+  <h2>🏆 Leaderboard</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody id="leaderboard-body">
+      <!-- هنا هيتحط الدرجات -->
+    </tbody>
+  </table>
+</section>
+
+<script>
+  const players = [
+    { name: "Eiad Ramy", score: 28 },
+    { name: "Adam Hussien", score: 25 },
+    { name: "Yousef Araby", score: 22 },
+    { name: "Yousef Elsab3awy", score: 20 }
+  ];
+
+  // ترتيب حسب الدرجة
+  players.sort((a, b) => b.score - a.score);
+
+  const tbody = document.getElementById("leaderboard-body");
+
+  players.forEach((player, index) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${index + 1}</td>
+      <td>${player.name}</td>
+      <td>${player.score}</td>
+    `;
+    tbody.appendChild(row);
+  });
+</script>
+
+
+
+
 
   <script>
 function checkAnswers() {
