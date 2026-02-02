@@ -811,4 +811,9 @@ button:hover {
   color: #a020f0; /* بنفسجي */
   text-shadow: 0 0 8px #d580ff, 0 0 12px #d580ff; /* لمعان */
   font-weight: bold;
-}
+}.purple-title {
+  background: linear-gradient(90deg, #a020f0, #ff00ff); /* بنفسجي → فوشيا */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(160,32,240,0.7), 0 0 20px rgba(255,0,255,0.6);
