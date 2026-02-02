@@ -803,17 +803,28 @@ button:hover {
   border-top: 1px solid #ccc;
   padding-top: 15px;
   font-size: 0.9em;
-}.purple-title {
-  color: #a020f0; /* بنفسجي */
-  text-shadow: 0 0 8px #d580ff, 0 0 12px #d580ff; /* لمعان */
+}.event-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 300px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.event-box h4 {
+  color: #6a0dad; /* بنفسجي واضح */
+  margin-bottom: 10px;
+}
+
+.event-box p {
+  margin: 6px 0;
+  font-size: 0.95em;
+}
+
+.event-box a {
+  color: #ff6600;
+  text-decoration: none;
   font-weight: bold;
-}.purple-title {
-  color: #a020f0; /* بنفسجي */
-  text-shadow: 0 0 8px #d580ff, 0 0 12px #d580ff; /* لمعان */
-  font-weight: bold;
-}.purple-title {
-  background: linear-gradient(90deg, #a020f0, #ff00ff); /* بنفسجي → فوشيا */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  text-shadow: 0 0 10px rgba(160,32,240,0.7), 0 0 20px rgba(255,0,255,0.6);
+}
