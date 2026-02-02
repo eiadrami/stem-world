@@ -747,41 +747,4 @@ button:hover {
   margin-top: 20px;
   text-align: center;
   font-size: 18px;
-}.about {
-  padding: 40px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-.about h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-.about p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: auto;
-}
-.stem-logo {
-  margin-top: 20px;
-  max-width: 150px;
-}
-
-.whatsapp {
-  text-align: center;
-  padding: 20px;
-  background-color: #e0f7fa;
-}
-.whatsapp a {
-  font-weight: bold;
-  color: #00796b;
-  text-decoration: none;
-}
-
-.footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 30px 10px;
-  font-size: 1em;
 }
