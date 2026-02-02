@@ -803,4 +803,8 @@ button:hover {
   border-top: 1px solid #ccc;
   padding-top: 15px;
   font-size: 0.9em;
+}.purple-title {
+  color: #a020f0; /* بنفسجي */
+  text-shadow: 0 0 8px #d580ff, 0 0 12px #d580ff; /* لمعان */
+  font-weight: bold;
 }
